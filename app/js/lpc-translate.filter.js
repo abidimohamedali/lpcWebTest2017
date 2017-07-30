@@ -25,6 +25,6 @@ angular.module('LpcWebTest2017')
 
         }
         //TODO
-        if (!filter) {console.log("xxxxxxx  sorry  xxxxxxxxx") ; return;}
+        if (!filter)  return;
         return filter;
     }]);
