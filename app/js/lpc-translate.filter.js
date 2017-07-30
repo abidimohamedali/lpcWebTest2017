@@ -12,14 +12,15 @@ angular.module('LpcWebTest2017')
         var filter = function(key,locale){
 
             //TODO
-            if(!$rootScope.properties){
-                return key;
-            }
+            // if(!$rootScope.properties){
+            //     return key;
+            // }
             try{
 
                 return $rootScope.properties[locale][key];
             } catch (e) {
                 console.log("got error : ", e);
+                return $rootScope.properties[locale][key];
             }
 
         }
